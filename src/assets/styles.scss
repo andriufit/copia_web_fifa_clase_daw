@@ -1,0 +1,228 @@
+//Alto del menu + submenu
+$menuHeight: 94px;
+$maincolor:  #045694;
+
+* { 
+    font-family: "Poppins", sans-serif;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+body{
+    margin: 0;
+    background-color: #eef2fb;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $maincolor;
+
+    a{
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+
+    .mini-container{
+        ul{
+            display: flex;
+            justify-content: end;
+            margin: 0px;
+            padding: 2.4px 30px;
+
+            li{
+                margin-left: 23px;
+                a{
+                    font-size: .75rem;
+    
+                }
+            }
+
+        }
+
+        border-bottom: 1px solid #689abf;
+    }
+
+    .header-container{
+        display: flex;
+        height: 64px;
+        
+
+        & > a{
+            margin-left: 70px;
+            margin-right: 30px;  
+            display: flex;
+            flex-flow: column;
+
+            img{
+                margin: auto;
+                width: 105px;
+            }
+        }
+
+        nav{
+            display: flex;
+            ul{
+                margin: auto;
+                display: flex;
+                justify-content: center; 
+    
+                li{
+                    margin-right: 2rem;
+                    a{
+                        font-size: .875rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main{
+    padding-top: $menuHeight;
+}
+
+footer{
+    background-color: $maincolor;
+
+
+    .first-footer-container{
+        height: 56px;
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #689abf;
+
+        > *{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-logo{
+            height: 100%;
+            a{
+                padding: 15px 10px;
+                display: block;
+                height: 100%;
+
+                img{
+                    height: 100%;
+                }
+            }
+        }
+
+        .social-container{
+            display: flex;
+            ul{
+                list-style: none;
+
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0;
+                margin: auto;
+
+                li{
+                    margin-left: 45px;
+                    a{
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .footer-text{
+            margin-right: 0;
+            display: flex;
+            p{
+
+                padding: 0;
+                margin: auto;
+
+                color: white;
+                font-size: 18px;
+            }
+        }
+
+        .app-container{
+            margin-left: 35px;
+            display: flex;
+
+            a{
+                margin: auto;
+                height: 100%;
+                display: flex;
+
+                img{
+                    margin: auto;
+                }
+            }
+        }
+
+    }
+
+    .icons-footer-container{
+        > div{
+            width: 100%;
+        }
+
+        .partners-container{
+            text-align: center;
+
+            h5{
+                color: white;
+                margin-bottom: 15px;
+            }
+
+            .partners-list{
+                display: flex;
+                flex-flow: row;
+                max-width: 1250px;
+                margin: auto;
+
+                .partners-list-items{
+                    margin: auto;
+
+                    img{
+                        width: 100px;
+                    }
+                }
+            }
+        }
+
+        .sponsors-container{
+            text-align: center;
+
+            h5{
+                color: white;
+                margin-bottom: 15px;
+            }
+
+            .sponsors-list{
+                display: flex;
+                flex-flow: row;
+                max-width: 1450px;
+                margin: auto;
+
+                .sponsors-list-items{
+                    margin: auto;
+
+                    img{
+                        width: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "./components/mainNewComponent.scss";
+@import "./components/featuredNewsComponent.scss";
