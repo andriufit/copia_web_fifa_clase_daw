@@ -11,7 +11,16 @@
         </div>
 
         <div class="right-container">
-
+            
+            <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
+                <SplideSlide>
+                <img src="/img/ios.png" alt="Sample 1">
+                </SplideSlide>
+                <SplideSlide>
+                <img src="/img/play.png" alt="Sample 1">
+                </SplideSlide>
+            </Splide>
+          
         </div>
     </div>
 </template>
