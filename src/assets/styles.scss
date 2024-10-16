@@ -88,6 +88,25 @@ header{
                 }
             }
         }
+
+        .header-icons-container{
+            margin-left: auto;
+            ul{
+                list-style: none;
+                display: flex;
+
+                li{
+                    margin-left: 15px;
+                    margin-right: 15px;
+
+                    a{
+                        svg{
+                            font-size: 21px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -137,6 +156,10 @@ footer{
                     margin-left: 45px;
                     a{
                         color: white;
+
+                        svg{
+                            font-size: 22px;
+                        }
                     }
                 }
             }
