@@ -1,6 +1,7 @@
 <script setup>
   import mainNewComponent from './components/mainNewComponent.vue';
   import featuredNewsComponent from './components/featuredNewsComponent.vue';
+  import homeCarrouselComponent from './components/homeCarrouselComponent.vue';
 
 </script>
 
@@ -118,6 +119,8 @@
       />
 
     <featuredNewsComponent/>
+
+    <homeCarrouselComponent title="Titulo de prueba" href="/"/>
 
   </main>
 
